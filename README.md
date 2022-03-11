@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+# bulma-clean-theme
 
-You can use the [editor on GitHub](https://github.com/hoshi2710/hoshi2710.github.com/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
+![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a clean and simple Jekyll Theme built with the [Bulma](https://bulma.io/) framework, providing a modern-looking site to start with. 
 
-### Markdown
+The theme uses [Alpine.js](https://github.com/alpinejs/alpine) for its interactive components, such as mobile navbar and notifications.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Contents
 
-```markdown
-Syntax highlighted code block
+* [Installation](#installation)
+* [Documentation](#documentation)
+* [Contributing](#contributing)
+* [Development](#development)
+* [Licence](#licence)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Installation
 
-1. Numbered
-2. List
+Add this line to your Jekyll site's `Gemfile`:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```ruby
+gem "bulma-clean-theme"
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+And add this line to your Jekyll site's `_config.yml`:
 
-### Jekyll Themes
+```yaml
+theme: bulma-clean-theme
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hoshi2710/hoshi2710.github.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+If you are deploying to GitHub pages, then you can also install the [GitHub Pages gem](https://github.com/github/pages-gem) and use `remote_theme` instead of `theme` in your `_config.yml`. **Note that the GitHub Pages gem requires Jekyll version 3.9.**
 
-### Support or Contact
+```yaml
+# With GitHub Pages Gem
+remote_theme: chrisrhymes/bulma-clean-theme
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install bulma-clean-theme
+
+## Documentation
+
+Check out the demo site for the [Documentation](https://www.csrhymes.com/bulma-clean-theme/docs/)
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/chrisrhymes/bulma-clean-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
