@@ -148,10 +148,10 @@ a {
     margin-top: 8px; }
 
 .banner-theme-default {
-  background: -webkit-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: -o-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: -moz-linear-gradient(0deg, #3CD5FF, #007AFF);
-  background: linear-gradient(100deg, #3CD5FF, #007AFF); }
+  background: -webkit-linear-gradient(0deg, #410C6C, #003366);
+  background: -o-linear-gradient(0deg, #410C6C, #003366);
+  background: -moz-linear-gradient(0deg, #410C6C, #003366);
+  background: linear-gradient(100deg, #410C6C, #003366);}
 
 .banner-theme-pink {
   background: -webkit-linear-gradient(0deg, #FFCE69, #FA709A);
