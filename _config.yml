@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '별이 빛나는 밤에'
 description: '개발 / 테크 블로그'
-keyword: 'zhonger，zhonger的博客，nodejs，kvm, 机器学习'
+keyword: 'hoshi'
 url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -31,7 +31,7 @@ footer:
   since: 2022
 
 # Author 配置博主信息
-author: 'Hoshi'
+author: '이호현'
 nickname: 'Hoshi'
 bio: 'testtest'
 avatar: '/assets/img/profile.webp'
@@ -52,7 +52,7 @@ mathjax: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['twitter','facebook','google']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -63,19 +63,15 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  google-scholar: 'https://scholar.google.com/citations?user=AUupIooAAAAJ'
-  researchgate: 'https://www.researchgate.net/profile/Shengzhou-Li'
-  ORCID: 'https://orcid.org/0000-0001-6973-3825'
-  github: 'https://github.com/zhonger'
-  linkedin: 'https://www.linkedin.com/in/shengzhouli/'
-  segmentfault: 'https://segmentfault.com/u/wuwozhonger'
+  email: 'mailto:hamh1121@icloud.com'
+  github: 'https://github.com/hoshi2710/'
 
 # Links 友情链接
 links:
-  'Mr Li': 'https://lisz.me'
+  '대충 형제 블로그': 'https://shiny-shine.github.io'
 
-# Beian 备案号
-beian: '沪ICP备xxxxxxxx号'
+# 대충 중국 공산당 판호 번호 비슷한거 인듯.
+beian: ''
 
 # CC License
 cclicense: true

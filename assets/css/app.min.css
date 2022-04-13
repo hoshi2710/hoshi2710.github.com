@@ -27,7 +27,7 @@ audio,body,caption,div,footer,form,h1,h2,h3,h4,h5,h6,header,html,iframe,label,le
 	outline:0 none
 }
 body {
-	font-family:-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	color:#656565;
 	-webkit-font-smoothing:antialiased;
 	background-color:#f7f8fa;
@@ -233,7 +233,7 @@ a {
 	position:relative
 }
 .article-list .article-item .post-preview .post-title {
-	font-family:Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	color:#4e4e4e;
 	font-size:24px;
 	line-height:32px
@@ -248,7 +248,7 @@ a {
 .article-list .article-item .post-preview .post-excerpt {
 	margin-top:8px;
 	font-size:16px;
-	font-family:Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	line-height:26px;
 	word-break:break-all;
 	color:#b8bdc3
@@ -407,7 +407,7 @@ a {
 	padding:0 8px;
 	font-size:14px;
 	color:#a6abb2;
-	font-family:-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	line-height:22px;
 	box-sizing:border-box;
 	box-shadow:0 0 .6px #d5dae1;
@@ -633,7 +633,7 @@ a {
 	padding:0 8px;
 	font-size:14px;
 	color:#a6abb2;
-	font-family:-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	line-height:22px;
 	box-sizing:border-box;
 	box-shadow:0 0 .6px #d5dae1;
@@ -781,8 +781,10 @@ a {
 	margin-left:30px
 }
 .post-content .container .table-of-contents h2 {
-	font-family:fantasy;
-	color:#e32e00
+	font-family:fantasy,sans-serif;
+	color:rgb(205, 162, 255) !important;
+	letter-spacing:2px;
+	
 }
 .post-content .container .table-of-contents ul {
 	margin-left:20px;
@@ -805,7 +807,7 @@ a {
 	margin:0 20px 0 0!important
 }
 .markdown-body {
-	font-family:Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	font-family:'Sandol Gothic',Merriweather,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 	width:720px;
 	box-sizing:border-box;
 	padding:0 0 32px
@@ -1346,7 +1348,7 @@ a {
 		margin:100px 0 8px
 	}
 	.post-wrapper h1 {
-		font-family:"Helvetica Neue",Helvetica,Arial,"Pingfang SC","Microsoft Yahei",Sans-serif
+		font-family:'Sandol Gothic',"Helvetica Neue",Helvetica,Arial,"Pingfang SC","Microsoft Yahei",Sans-serif
 	}
 	.post-wrapper .post-meta {
 		margin-top:16px
@@ -1395,4 +1397,9 @@ a {
 		margin-top:4px;
 		font-size: 16px
 	}
+}
+.category_page_title
+{
+	margin-bottom: 20px;
+	color: #fff !important;
 }

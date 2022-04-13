@@ -1,31 +1,24 @@
 ---
 layout: page
-home-title: H2O-ac theme for Jekyll
-description: 基于可能是最好看的 Jekyll 主题 H2O 的学术版主题
+home-title: 별이 빛나는 밤에
+description: 개발 / 테크 블로그
 ---
 
-# About me
+# 나에 대해서
 
-&emsp;&emsp;I am a PhD student from xxx University.....
+&emsp;&emsp;아무튼 인서울대 다님
 
 # Publications
 
 1. Publication 1 [[DOI]](#)
 2. Publication 2 [[DOI]](#)
 
-# Contact
+# 연락처
 
-Email: zhonger[at]live.cn (Please replace [at] with @.)
+Email: [hamh1121@icloud.com](mailto:hamh1121@icloud.com)
 
-# 关于我
+# 포트폴리오
 
-&emsp;&emsp;我是一名来自xx大学的博士生。。。。。。
+1. 예시1 [[DOI]](http://www.google.com)
+2. 예시2 [[DOI]](http://www.google.com)
 
-# 论文发表
-
-1. 论文1 [[DOI]](#)
-2. 论文2 [[DOI]](#)
-
-# 联系我
-
-邮箱：zhonger[at]live.cn (请使用@替换[at])

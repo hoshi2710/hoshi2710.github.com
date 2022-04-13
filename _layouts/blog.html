@@ -90,6 +90,26 @@ description: 或许是最漂亮的Jekyll主题
             </section>
             {% endif %}
 
+            <section class="tags-card">
+                <div class="links" rel="links">Categories</div>
+                {% for link in site.links %}
+                    <a href="{{ link[1] }}" target="_blank" class="tag" rel="noreferrer"> {{ link[0] }} </a>
+                {% endfor %}
+
+                <ul>
+    
+                    {% assign pages_list = site.pages %}
+                    {% for node in pages_list %}
+                      {% if node.title != null %}
+                        {% if node.layout == "category" %}
+                          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                </ul>
+            </section>
             {% if site.links.size > 0 %}
             <section class="tags-card">
                 <div class="links" rel="links">Links</div>
@@ -103,7 +123,7 @@ description: 或许是最漂亮的Jekyll主题
 
         {% if site.search %}
         <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <input id="search_input" type="text" placeholder="검색..." autocomplete="off">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-search"></use>
             </svg>
