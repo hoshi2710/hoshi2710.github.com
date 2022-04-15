@@ -76,6 +76,14 @@ a {
 .g-header .g-logo:hover {
 	opacity:1
 }
+.g-logo
+{
+	transition:all 0.7s !important;
+}
+.g-logo:hover
+{
+	transform: rotate(360deg) scale(1.2) !important;
+}
 .g-header .g-logo a {
 	display:block;
 	width:100%;
@@ -118,7 +126,8 @@ a {
 	opacity:.7
 }
 .g-header .g-nav>ul>li>a:hover {
-	opacity:1
+	opacity:1;
+	transform:scale(1.2);
 }
 .g-header .nav-default a:hover {
 	color:#1494fb!important
