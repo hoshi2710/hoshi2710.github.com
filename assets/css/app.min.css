@@ -1203,8 +1203,20 @@ a {
 	.author-detail .author-card {
 		width:92%
 	}
+	.g-nav>ul>li>a:hover{
+		transform: scale(1)!important;
+	}
+	.g-logo:hover{
+		transform: rotate(0deg) scale(1) !important;
+	}
 }
 @media screen and (max-width:695px) {
+	.g-logo:hover{
+		transform: rotate(0deg) scale(1) !important;
+	}
+	.g-nav>ul>li>a:hover{
+		transform: scale(1)!important;
+	}
 	.g-header {
 		position:absolute;
 		top:0;
@@ -1214,6 +1226,10 @@ a {
 		display:block;
 		width:40px;
 		height:28px
+	}
+	.icon-menu
+	{
+		cursor: pointer;
 	}
 	.g-header .g-nav {
 		position:relative;
