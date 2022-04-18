@@ -164,7 +164,11 @@ a {
 	font-size:100px;
 	font-family:'Nanum SoMiCe',sans-serif;
 	font-weight:700;
-	line-height:52px
+	line-height:52px;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 }
 .home-banner h3 {
 	font-size:20px;
@@ -174,6 +178,10 @@ a {
 	letter-spacing:5px;
 	margin-top:50px !important;
 	font-weight:600 !important;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 }
 .banner-theme-default {
 	/* background:-webkit-linear-gradient(0deg,#410C6C,#003366);
@@ -411,7 +419,7 @@ a {
 .author-card .sns-links li .icon-vk:hover {
 	color:#5181b8
 }
-.article-item .post-meta .post-tag,.tags-card .tag,.tags-content .tag {
+.article-item .post-meta .post-tag,.tags-card .tag,.tags-content .tag,.Categories-card > ul > li > a,  .links-card a{
 	display:inline-block;
 	width:auto;
 	height:22px;
@@ -426,15 +434,21 @@ a {
 	background-color:#fafafa;
 	cursor:pointer;
 	margin-right:2px;
-	transition:.2s
+	transition:.2s;
 }
+.links-card .links,.Categories-card .categories,.tags-card .Tags
+{
+	text-align: center;
+	margin-bottom:20px;
+}
+
 .article-item .post-meta .post-tag:last-child,.tags-card .tag:last-child,.tags-content .tag:last-child {
 	margin-right:0
 }
 .article-item .post-meta .post-tag:hover,.tags-card .tag:hover,.tags-content .tag:hover {
 	color:#83888f
 }
-.tags-card .links {
+.tags-card .links-card  {
 	width:100%;
 	font-size:16px;
 	color:#4e4e4e;
