@@ -8,8 +8,8 @@
 	src:url(../fonts/Merriweather-Light.ttf)
 }
 @font-face {
-	font-family:'Nanum SoMiCe';
-	src:url(../fonts/NanumSoMiCe.ttf) format('woff'),url(../fonts/NanumSoMiCe.ttf) format('woff2');
+	font-family:'Galmuri';
+	src:url(../fonts/Galmuri.ttf) format('woff'),url(../fonts/Galmuri.ttf) format('woff2');
 	font-weight:400;
 }
 @font-face {
@@ -161,8 +161,8 @@ a {
 .home-banner h2 {
 	padding-top:190px;
 	line-height:38px;
-	font-size:100px;
-	font-family:'Nanum SoMiCe',sans-serif;
+	font-size:70px !important;
+	font-family:'Galmuri',sans-serif;
 	font-weight:700;
 	line-height:52px;
 	user-select: none;
@@ -1158,7 +1158,7 @@ a {
 	}
 	.home-banner h2 {
 		padding-top:260px;
-		font-size:100px
+		font-size:70px !important;
 	}
 	.home-banner h3 {
 		font-size:22px;
@@ -1336,7 +1336,7 @@ a {
 	}
 	.home-banner h2 {
 		padding-top:180px;
-		font-size:75px;
+		font-size:43px !important;
 		line-height:48px
 	}
 	.home-banner h3 {
@@ -1431,7 +1431,7 @@ a {
 }
 @media screen and (max-width:376px) {
 	.home-banner h2 {
-		font-size:26px;
+		font-size:40px !important;
 		line-height:38px
 	}
 	.home-banner h3 {
