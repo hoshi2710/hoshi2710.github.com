@@ -87,14 +87,9 @@ layout: default
             </section>
             {% endif %}
 
-            <section class="tags-card">
-                <div class="links" rel="links">Categories</div>
-                {% for link in site.links %}
-                    <a href="{{ link[1] }}" target="_blank" class="tag" rel="noreferrer"> {{ link[0] }} </a>
-                {% endfor %}
-
+            <section class="Categories-card">
+                <div class="categories" rel="links">Categories</div>
                 <ul>
-    
                     {% assign pages_list = site.pages %}
                     {% for node in pages_list %}
                       {% if node.title != null %}
@@ -103,12 +98,11 @@ layout: default
                           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
                         {% endif %}
                       {% endif %}
-                    {% endfor %}
-                    
+                    {% endfor %}          
                 </ul>
             </section>
             {% if site.links.size > 0 %}
-            <section class="tags-card">
+            <section class="links-card">
                 <div class="links" rel="links">Links</div>
                 {% for link in site.links %}
                     <a href="{{ link[1] }}" target="_blank" class="tag" rel="noreferrer"> {{ link[0] }} </a>
