@@ -27,7 +27,7 @@
       </div>
       <div class="post-meta">
         {% if site.language == 'ko-kr' %}
-        <span>이 글은 {{ page.content | strip_html | strip_newlines | remove: " " | size }}개의 단어로 이루어져 있습니다. <b>·</b> 읽는데 대략 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 분이 소요됩니다.</span>
+        <span>이 글은 {{ page.content | strip_html | strip_newlines | remove: " " | size }}자로 이루어져 있습니다. <b>·</b> 읽는데 대략 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 분이 소요됩니다.</span>
         {% else %}
         <span>There are {{ page.content | strip_html | strip_newlines | remove: " " | size }} words totally <b>·</b> It may needs {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minutes</span>
         {% endif %}
