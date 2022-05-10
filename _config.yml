@@ -16,7 +16,7 @@ baseurl: ''
 
 # International
 language: ko-kr
-
+timezone: Asia/Seoul
 # Navigation links
 nav:
   home: '/'
@@ -31,7 +31,7 @@ footer:
   since: 2022
 
 # Author 配置博主信息
-author: '이호현'
+author: 'Hoshi'
 nickname: 'Hoshi'
 bio: 'testtest'
 avatar: '/assets/img/profile.webp'
