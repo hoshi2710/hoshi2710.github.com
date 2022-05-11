@@ -49,8 +49,10 @@ description: 개발 / 테크 블로그
                 {% endif %}
             </section>
 
+            
             {% if site.recommend-tags and site.tags.size>0 %}
             <section class="tags-card">
+                <div class="Tags" rel="Tags">Tags</div>
                 {% for tag in site.tags %}
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
@@ -60,8 +62,22 @@ description: 개발 / 테크 블로그
             </section>
             {% endif %}
 
+            <section class="Categories-card">
+                <div class="categories" rel="links">Categories</div>
+                <ul>
+                    {% assign pages_list = site.pages %}
+                    {% for node in pages_list %}
+                      {% if node.title != null %}
+                        {% if node.layout == "category" %}
+                          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}          
+                </ul>
+            </section>
             {% if site.links.size > 0 %}
-            <section class="tags-card">
+            <section class="links-card">
                 <div class="links" rel="links">Links</div>
                 {% for link in site.links %}
                     <a href="{{ link[1] }}" target="_blank" class="tag" rel="noreferrer"> {{ link[0] }} </a>
