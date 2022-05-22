@@ -3,6 +3,8 @@ layout: page
 home-title: 별이 빛나는 밤에
 description: 개발 / 테크 블로그
 ---
+# Introduce
+
 ## [블로그 게시글 보기 ▶]({{site.url}}/blog/index.html)
 
 # 🧑🏻 Profile
@@ -15,9 +17,9 @@ description: 개발 / 테크 블로그
 
 *2002.03.28*
 
-**✉ E-mail :** hamh1121@icloud.com
+**✉ E-mail :** [hamh1121@icloud.com](mailto:hamh1121@icloud.com)
 
-**🐈 Github :** http://github.com/hoshi2710
+**🐈 Github :** [http://github.com/hoshi2710](http://github.com/hoshi2710)
 
 ---
 
@@ -41,7 +43,7 @@ description: 개발 / 테크 블로그
 
 ### 💻 백준 (Online Judge)
 
-[http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121](http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121)
+<iframe src="http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121" frameBorder="0"></iframe>
 
 ### **🎌** 일본어 (Japanese)
 
