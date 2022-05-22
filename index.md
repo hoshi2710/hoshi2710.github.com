@@ -43,7 +43,7 @@ description: 개발 / 테크 블로그
 
 ### 💻 백준 (Online Judge)
 
-<iframe src="http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121" frameBorder="0"></iframe>
+![](http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121)
 
 ### **🎌** 일본어 (Japanese)
 
