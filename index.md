@@ -3,22 +3,55 @@ layout: page
 home-title: 별이 빛나는 밤에
 description: 개발 / 테크 블로그
 ---
+## [블로그 게시글 보기 ▶]({{site.url}}/blog/index.html)
 
-# 나에 대해서
+# 🧑🏻 Profile
 
-&emsp;&emsp;아무튼 인서울대 다님
+![Hoshi's Profile Icon]({{site.url}}/assets/img/profile.png){: width="35%" height="35%"}
 
-# Publications
+## 이호현 - *Hoshi* 🌟
 
-1. Publication 1 [[DOI]](#)
-2. Publication 2 [[DOI]](#)
+***HoHyeon Lee***
 
-# 연락처
+*2002.03.28*
 
-Email: [hamh1121@icloud.com](mailto:hamh1121@icloud.com)
+**✉ E-mail :** hamh1121@icloud.com
 
-# 포트폴리오
+**🐈 Github :** http://github.com/hoshi2710
 
-1. 예시1 [[DOI]](http://www.google.com)
-2. 예시2 [[DOI]](http://www.google.com)
+---
 
+# 📖 Education
+
+## 2022.02 ~
+
+🍃 **서경대학교(*SeoKyeong University*)** 재학 
+
+# 🏅 Awards
+
+곧 새로운 수상 이력이 올라오길 바라며😊
+
+# ⚡ Activities
+
+군대 갔다오고부터 달려보도록 하죠 💨
+
+---
+
+# 🛠 Skills
+
+### 💻 백준 (Online Judge)
+
+[http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121](http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121)
+
+### **🎌** 일본어 (Japanese)
+
+**★★★★★★★☆☆☆**
+
+### 💬 영어 (English)
+
+**★★★★☆☆☆☆☆☆**
+
+# 📱 Portfolio
+아직은 열심히 준비하고 있어요...!
+
+# 아직 미완성 입니다…
