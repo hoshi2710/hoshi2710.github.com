@@ -78,6 +78,7 @@ layout: default
 
             {% if site.recommend-tags and site.tags.size>0 %}
             <section class="tags-card">
+                <div class="Tags" rel="Tags">Tags</div>
                 {% for tag in site.tags %}
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
