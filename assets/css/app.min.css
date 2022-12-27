@@ -1165,7 +1165,7 @@ a {
 	}
 	nav.g-nav
 	{
-		display: block !important;
+		display: block ;
 	}
 }
 @media screen and (max-width:960px) {
@@ -1200,7 +1200,7 @@ a {
 	}
 	nav.g-nav
 	{
-		display: block !important;
+		display: block ;
 	}
 }
 @media screen and (max-width:960px) {
@@ -1216,7 +1216,7 @@ a {
 	}
 	nav.g-nav
 	{
-		display: block !important;
+		display: block ;
 	}
 
 }
@@ -1238,13 +1238,13 @@ a {
 	}
 	nav.g-nav
 	{
-		display: none !important;
+		display: none ;
 	}
 }
 @media screen and (max-width:695px) {
 	nav.g-nav
 	{
-		display: none !important;
+		display: none ;
 	}
 	.g-logo:hover{
 		transform: rotate(0deg) scale(1) !important;
