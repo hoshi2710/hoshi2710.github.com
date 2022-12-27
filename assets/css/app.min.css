@@ -1163,6 +1163,10 @@ a {
 	.home-banner h3 {
 		font-size:22px;
 	}
+	nav.g-nav
+	{
+		display: block !important;
+	}
 }
 @media screen and (max-width:960px) {
 	.g-container {
@@ -1194,6 +1198,10 @@ a {
 	.post-content .container .table-of-contents {
 		display:none
 	}
+	nav.g-nav
+	{
+		display: block !important;
+	}
 }
 @media screen and (max-width:960px) {
 	.archives-date {
@@ -1206,6 +1214,11 @@ a {
 		text-overflow:ellipsis;
 		margin-bottom:-8px!important
 	}
+	nav.g-nav
+	{
+		display: block !important;
+	}
+
 }
 @media screen and (max-width:768px) {
 	.markdown-body,.post-wrapper,.read-next {
