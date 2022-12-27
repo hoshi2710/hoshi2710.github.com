@@ -1236,8 +1236,16 @@ a {
 	.g-logo:hover{
 		transform: rotate(0deg) scale(1) !important;
 	}
+	nav.g-nav
+	{
+		display: none !important;
+	}
 }
 @media screen and (max-width:695px) {
+	nav.g-nav
+	{
+		display: none !important;
+	}
 	.g-logo:hover{
 		transform: rotate(0deg) scale(1) !important;
 	}
