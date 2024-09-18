@@ -1,29 +1,29 @@
 ---
 layout: default
-home-title:  "별이 빛나는 밤에"
+home-title: "별이 빛나는 밤에"
 description: 개발 / 테크 블로그
 ---
 
 {% include header.html %}
-
 <div
-    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
-    data-theme="{{ site.theme-color }}"
-    style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}"
+  class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+  data-theme="{{ site.theme-color }}"
+  style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}"
 >
-    <h2>{{ site.title }}</h2>
-    <h3>{{ site.description }}</h3>
+  <h2>{{ site.title }}</h2>
+  <h3>{{ site.description }}</h3>
 </div>
 
 <main class="g-container home-content">
-    <div class="article-list">
-        <div class="post-content" style="padding-left: 30px;padding-right: 30px;width: auto;">
-            <article class="markdown-body" style="width: auto;">
-                {{ content }}
-            </article>
-        </div>
+  <div class="article-list">
+    <div
+      class="post-content"
+      style="padding-left: 30px; padding-right: 30px; width: auto"
+    >
+      <article class="markdown-body" style="width: auto">{{ content }}</article>
     </div>
-
+  </div>
+  <!-- 
     <aside class="g-sidebar-wrapper">
         <div class="g-sidebar">
             <section class="author-card">
@@ -97,8 +97,7 @@ description: 개발 / 테크 블로그
         </div>
         {% endif %}
 
-    </aside>
-
+    </aside> -->
 </main>
 
 {% include footer.html %}
