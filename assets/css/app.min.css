@@ -91,6 +91,10 @@ a {
 /* .g-container {
   width: 960px;
 } */
+.g-containerhome {
+  display: flex;
+  justify-content: space-evenly;
+}
 .g-header {
   position: fixed;
   top: 0;
@@ -252,7 +256,6 @@ a {
 }
 .article-list {
   position: relative;
-  margin: 5dvh auto;
   width: 60vw;
 }
 .article-list .article-item {
@@ -511,7 +514,6 @@ a {
 }
 .g-sidebar-wrapper {
   float: right;
-  width: 240px;
 }
 .g-sidebar {
   padding: 30px 20px;
@@ -520,6 +522,7 @@ a {
   border-radius: 3px;
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba(0, 37, 55, 0.06);
+  width: 240px;
 }
 .g-sidebar section {
   padding: 30px 0;
@@ -1277,6 +1280,7 @@ a {
   }
   .g-sidebar,
   .search-card {
+    width: 0;
     display: none;
   }
   .pagination .page-num {
@@ -1337,6 +1341,10 @@ a {
   }
   nav.g-nav {
     display: none;
+  }
+  .article-list,
+  .tags-content {
+    width: 100%;
   }
 }
 @media screen and (max-width: 695px) {
