@@ -93,7 +93,7 @@ a {
 } */
 .g-containerhome {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .g-header {
   position: fixed;
@@ -260,6 +260,7 @@ a {
 }
 .g-container .article-list {
   margin: 0 auto;
+  width: 60vw;
 }
 .article-list .article-item {
   width: 100%;
@@ -517,6 +518,7 @@ a {
 }
 .g-sidebar-wrapper {
   float: right;
+  margin-left: 20px;
 }
 .g-sidebar {
   padding: 30px 20px;
