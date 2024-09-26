@@ -254,9 +254,12 @@ a {
 .home-content:after {
   clear: both;
 }
-.article-list {
+.g-containerhome .article-list {
   position: relative;
   width: 60vw;
+}
+.g-container .article-list {
+  margin: 0 auto;
 }
 .article-list .article-item {
   width: 100%;
