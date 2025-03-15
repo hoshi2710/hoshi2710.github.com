@@ -21,6 +21,10 @@ description: 개발 / 테크 블로그
 
 🍃 **서경대학교(_SeoKyeong University_)** 재학
 
+## 2025.03 ~
+
+🔥 **University MakeUs Challenge(UMC) 8th** Node.js 파트 활동 시작
+
 # 🏅 Awards
 
 곧 새로운 수상 이력이 올라오길 바라며😊
@@ -37,18 +41,20 @@ description: 개발 / 테크 블로그
 
 # 🛠 Skills
 
-### 💻 백준 (Online Judge)
+### 💻 백준 (BaekJoon Online Judge)
 
+[https://solved.ac/profile/hamh1121](https://solved.ac/profile/hamh1121)
 ![](http://mazassumnida.wtf/api/v2/generate_badge?boj=hamh1121)
-
-### **🎌** 일본어 (Japanese)
-
-**★★★★★★★☆☆☆**
-
-### 💬 영어 (English)
-
-**★★★★☆☆☆☆☆☆**
 
 # 📱 Portfolio
 
-아직은 열심히 준비하고 있어요...!
+## 미세먼지 현황판
+
+![]({{site.url}}/assets/img/main_img/Portfolio_fineDust_Dashboard.png){: width="50%" height="50%"}
+[https://hoshi2710.github.io/Korea-fineDust-DashBoard/](https://hoshi2710.github.io/Korea-fineDust-DashBoard/)
+
+## 리듬게임 데모
+
+![]({{site.url}}/assets/img/main_img/Portfolio_Html-Canvas-Rythm-Game1.png){: width="50%" height="50%"}
+![]({{site.url}}/assets/img/main_img/Portfolio_Html-Canvas-Rythm-Game2.png){: width="50%" height="50%"}
+[https://hoshi2710.github.io/Html-Canvas-Rythm-Game/](https://hoshi2710.github.io/Html-Canvas-Rythm-Game/)

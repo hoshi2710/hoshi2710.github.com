@@ -1,8 +1,8 @@
 # Site settings 配置站点
-title: '별이 빛나는 밤에'
-description: '개발 / 테크 블로그'
-keyword: 'hoshi'
-url: '' # your host
+title: "별이 빛나는 밤에"
+description: "개발 / 테크 블로그"
+keyword: "hoshi"
+url: "" # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -12,29 +12,29 @@ url: '' # your host
 # 例如，当你的域名是 "kaeyleo.github.io"  时，这个 url 需要留空
 # but if your created a repo named "myblog", and the site is "kaeyleo.github.io/myblog", change baseurl to '/myblog'
 # 但是，如果你创建了一个叫 "myblog" 的网站，此时网址会变成 "kaeyleo.github.io/myblog" ，这时再将 baseurl 设置为 '/myblog'
-baseurl: ''
+baseurl: ""
 
 # International
 language: ko-kr
 timezone: Asia/Seoul
 # Navigation links
 nav:
-  home: '/'
-  blog: '/blog/index.html'
-  archives: '/archives.html'
-  tags: '/tags.html'
-  RSS: '/feed.xml'
-  logs: '/logs.html'
+  home: "/"
+  blog: "/blog/index.html"
+  archives: "/archives.html"
+  tags: "/tags.html"
+  RSS: "/feed.xml"
+  logs: "/logs.html"
 
 # Footer
 footer:
   since: 2022
 
 # Author 配置博主信息
-author: 'Hoshi'
-nickname: 'Hoshi'
-bio: '언젠가 프로그래밍 분야의 ほし(STAR)가 되길 꿈꾸며...'
-avatar: '/assets/img/profile.webp'
+author: "Hoshi"
+nickname: "Hoshi"
+bio: "정상을 향해"
+avatar: "/assets/img/profile.webp"
 
 # Search
 search: true
@@ -45,47 +45,46 @@ nightMode: false
 # Comments 评论功能
 comments:
   disqus: true
-  disqus_url: 'https://hoshi2710.disqus.com/embed.js'
+  disqus_url: "https://hoshi2710.disqus.com/embed.js"
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
 # Share
 social-share: true
-social-share-items: ['twitter','facebook']
+social-share-items: ["twitter", "facebook"]
 
 # theme color 主题皮肤
-theme-color: 'default'  # pink or default
+theme-color: "default" # pink or default
 
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
-postPatterns: 'circuitBoard'
+postPatterns: "circuitBoard"
 
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  email: 'mailto:hamh1121@icloud.com'
-  github: 'https://github.com/hoshi2710/'
+  email: "mailto:hamh1121@icloud.com"
+  github: "https://github.com/hoshi2710/"
 
 # Links 友情链接
 links:
-  '대충 형제 블로그': 'https://shiny-shine.github.io'
 
 # 대충 중국 공산당 판호 번호 비슷한거 인듯.
-beian: ''
+beian: ""
 
 # CC License
 cclicense: true
 
 # CNZZ Analytics
 # cnzz: 1234567891
-cnzz: 
+cnzz:
 
 # Google Analytics
 # google_analytics: UA-XXXXXXXXX-X
 google_analytics: UA-228484148-1
 
 # Google Search
-google_search: 
+google_search:
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
@@ -93,8 +92,18 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 
 # Build settings
 paginate: 10
-paginate_path: 'blog/page:num'
-exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md', '*.gemspec', '*.gem']
+paginate_path: "blog/page:num"
+exclude:
+  [
+    "node_modules",
+    "dev",
+    "package.json",
+    "gulpfile.js",
+    ".gitignore",
+    "README.md",
+    "*.gemspec",
+    "*.gem",
+  ]
 
 # Markdown
 markdown: kramdown
